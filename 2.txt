@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS Reset */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* Body Styles */
+        body {
+            background-color: #2c3e50; /* Dark blue background */
+            color: #ecf0f1; /* Light gray text */
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        /* Container Styles */
+        .container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        /* Header Styles */
+        header {
+            width: 100%;
+            height: 80px; /* Reduced header height */
+            background-color: #34495e; /* Darker gray background */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px; /* Reduced padding */
+        }
+        header img {
+            height: 60px; /* Adjusted logo height */
+            width: auto;
+        }
+        /* Navigation Styles */
+        nav {
+            margin-left: 30px; /* Adjusted margin for better alignment */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #2980b9; /* Darker blue hover color */
+        }
+        /* Right Header Styles */
+        .righthead {
+            margin-right: 20px; /* Adjusted margin for better alignment */
+        }
+        .righthead a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #e74c3c; /* Red login button */
+            border-radius: 20px;
+            font-size: 16px; /* Slightly reduced font size */
+            transition: background-color 0.3s ease;
+        }
+        .righthead a:hover {
+            background-color: #c0392b; /* Darker red hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./logo.webp" alt="image">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="righthead">
+                <a href="#login">LOGIN</a>
+            </div>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header img {
+    height: 100%;
+    width: auto;
+}
+nav {
+    margin-left: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #ec0988;
+}
+.righthead {
+    margin-right: 20px;
+}
+.righthead a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ec0988;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+.righthead a:hover {
+    background-color: #fff;
+    color: #000;
+}
+@keyframes pulse {
+    0%, 100% {
+        color: #ecf0f1;
+    }
+    50% {
+        color: #ec0988;
+    }
+}
+
+/* Cover Section Styles */
+.cover {
+    position: relative;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./cover1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 82vh;
+    
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+}
+
+.cover h1 {
+    position: absolute;
+    font-size: 100px;
+    top: 25%;
+    animation: fadeh1 3s infinite;
+}
+@keyframes fadeh1 {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.cover p {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    animation: fadep 3s;
+}
+@keyframes fadep {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Menu Section Styles */
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+#menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.menubg {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(246, 5, 198, 0.5), rgba(236, 13, 244, 0.7));
+    width: 100%;
+    padding: 20px 30px;
+    gap: 10rem;
+}
+.leftmenu, .rightmenu {
+    width: 50%;
+}
+.leftmenu h2, .rightmenu h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(224, 19, 19, 0.3);
+    background-color: rgb(64, 0, 58);
+    animation: bounce 2s infinite;
+}
+.leftmenu ul, .rightmenu ul {
+    list-style-type: none;
+    padding: 10px;
+}
+.leftmenu ul li, .rightmenu ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.leftmenu ul li:hover, .rightmenu ul li:hover {
+    color: rgb(247, 237, 237);
+    background-color: rgb(233, 11, 210);
+    border-radius: 10px;
+}
+.price {
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu a, #gallery a, #reviews a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.3s ease; 
+}
+
+#menu a {
+    background-image: linear-gradient(to right, rgba(255, 0, 204, 0.5), rgba(236, 13, 244, 0.7));
+}
+
+#gallery a, #reviews a {
+    background-image: linear-gradient(to top, rgb(230, 20, 230), rgb(236, 6, 167));
+}
+
+#menu a:hover, #gallery a:hover, #reviews a:hover {
+    background-image: linear-gradient(to top, rgb(224, 21, 224), rgb(255, 0, 170));
+  
+    transform: translateY(-2px); 
+}
+
+/* Gallery Section Styles */
+/* #gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+#gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.imagecontainer {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+.imageright, .imageleft {
+    width: 50%;
+}
+#gallery img {
+    width: 100%;
+    height: 500px; 
+} */
+#gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+#gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#imagecontainer{
+    margin:1% 15%;
+    width:70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+#imagecontainer img{
+    width: 11%;
+    height: 100%;
+    object-fit: cover;
+  
+    border:2px solid white;
+    transition:0.5s ease ;
+}
+#imagecontainer img:hover{
+    width: 50%;
+}
+
+/* Reviews Section Styles */
+#reviews {
+    text-align: center;
+    margin-top: 20px;
+}
+#reviews h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.reviewcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 10px;
+}
+.reviewer {
+    width: 100%;
+    height: 300px;
+    background-color: #95025a;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reviewer img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+.reviewer h5 {
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #363434;
+}
+#contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10rem;
+}
+.box {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.box h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.links {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.links i {
+    color: white;
+    padding-right: 1.5rem;
+    transition: padding-right 0.3s ease;
+}
+.links:hover i {
+    padding-right: 2rem; 
+}
+.box p {
+    line-height: 1.8;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+/* Social Media Share Styles */
+.share a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: rgb(0, 0, 0);
+    margin-right: 0.2rem;
+    background: rgb(121, 121, 121);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+   
+}
+.share a:hover {
+    background-color: #fff;
+}
+section {
+    scroll-margin-top: 130px; /* This should be equal to the height of your fixed header */
+}
+
