@@ -82,7 +82,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./cover1.jpg);
+    background-image: url(./images/cover1.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
